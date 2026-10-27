@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Aplikasi sederhana untuk mengelola tugas harian.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="#ringkasan">Ringkasan</a>
+        <a href="#daftar-tugas">Daftar Tugas</a>
+        <a href="#tambah-tugas">Tambah Tugas</a>
+    </nav>
+
+    <main>
+        <section id="ringkasan">
+            <h2>Ringkasan Tugas</h2>
+            <article>
+                <h3>Tugas 1</h3>
+                <p>Deskripsi singkat tentang tugas 1.</p>   
+            </article>      
+            <article>
+                <h3>Tugas 2</h3>
+                <p>Deskripsi singkat tentang tugas 2.</p>
+            </article>  
+            <article>
+                <h3>Tugas 3</h3>
+                <p>Deskripsi singkat tentang tugas 3.</p>   
+            </article>           
+        </section>
+
+        <section id="daftar-tugas">
+            <h2>Daftar Tugas</h2>
+            <table border="1">
+                <caption>Daftar Tugas Harian</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nomor</th>
+                        <th scope="col">Nama Tugas</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Membuat halaman HTML</td>
+                        <td>Belum Selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Membuat CSS untuk styling</td>
+                        <td>Belum Dimulai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Membuat JavaScript untuk interaktif</td>
+                        <td>Belum Dimulai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tambah-tugas">
+            <h2>Tambah Tugas</h2>
+            <form>
+                <p>
+                    <label for="nama-tugas">Nama Tugas:</label>
+                    <input type="text" id="nama-tugas" name="nama-tugas" required>
+                </p>
+                <p>
+                    <label for="prioritas">Prioritas:</label>
+                    <select id="prioritas" name="prioritas">
+                        <option value="rendah">Rendah</option>
+                        <option value="sedang">Sedang</option>
+                        <option value="tinggi">Tinggi</option>
+                    </select>
+                </p>
+                <p>
+                <label for="status-tugas">Status Tugas:</label>
+                <select id="status-tugas" name="status-tugas">
+                    <option value="belum-dimulai">Belum Dimulai</option>
+                    <option value="sedang-dikerjakan">Sedang Dikerjakan</option>
+                    <option value="selesai">Selesai</option>
+                </select>
+                </p>
+                <button type="submit">Tambah Tugas</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Weri Yunelda</p>
+    </footer>
+    
+</body>
+</html>
